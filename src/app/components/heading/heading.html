@@ -1,0 +1,20 @@
+@switch (tag()) {
+  @case ('h1') {
+    <h1 [style.textAlign]="alignment()" [style.color]="color()" [style.fontWeight]="fontWeight()">{{ text() }}</h1>
+  }
+  @case ('h2') {
+    <h2 [style.textAlign]="alignment()" [style.color]="color()" [style.fontWeight]="fontWeight()">{{ text() }}</h2>
+  }
+  @case ('h3') {
+    <h3 [style.textAlign]="alignment()" [style.color]="color()" [style.fontWeight]="fontWeight()">{{ text() }}</h3>
+  }
+  @case ('h4') {
+    <h4 [style.textAlign]="alignment()" [style.color]="color()" [style.fontWeight]="fontWeight()">{{ text() }}</h4>
+  }
+  @case ('h5') {
+    <h5 [style.textAlign]="alignment()" [style.color]="color()" [style.fontWeight]="fontWeight()">{{ text() }}</h5>
+  }
+  @case ('h6') {
+    <h6 [style.textAlign]="alignment()" [style.color]="color()" [style.fontWeight]="fontWeight()">{{ text() }}</h6>
+  }
+}

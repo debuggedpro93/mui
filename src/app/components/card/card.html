@@ -1,0 +1,14 @@
+<div class="card" [class.box-shadow]="boxShadow()">
+  @if (imageUrl()) {
+    <img [src]="imageUrl()" alt="Card image">
+  }
+  <div class="card-content">
+    @if (title()) {
+      <h3 class="card-title">{{ title() }}</h3>
+    }
+    @if (subtitle()) {
+      <h4 class="card-subtitle">{{ subtitle() }}</h4>
+    }
+    <ng-content></ng-content>
+  </div>
+</div>
