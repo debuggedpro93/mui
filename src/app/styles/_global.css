@@ -1,0 +1,15 @@
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+  color: var(--brand-dark);
+  background-color: var(--brand-light);
+  margin: 0;
+  padding: var(--spacing-md);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: var(--spacing-sm);
+  font-weight: var(--font-weight-bold);
+}

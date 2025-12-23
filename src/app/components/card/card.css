@@ -1,12 +1,17 @@
 .card {
-  border-radius: 8px;
+  border-radius: var(--border-radius);
   overflow: hidden;
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: var(--border-width) solid #ddd;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .box-shadow {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--box-shadow);
+}
+
+.card:hover {
+  box-shadow: var(--box-shadow-lg);
 }
 
 .card img {
@@ -16,18 +21,18 @@
 }
 
 .card-content {
-  padding: 16px;
+  padding: var(--spacing-md);
 }
 
 .card-title {
   margin: 0;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: var(--font-weight-bold);
 }
 
 .card-subtitle {
   margin: 0;
   font-size: 1rem;
-  color: #666;
-  margin-bottom: 1rem;
+  color: var(--brand-secondary);
+  margin-bottom: var(--spacing-sm);
 }
