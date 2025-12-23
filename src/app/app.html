@@ -1,25 +1,17 @@
 <app-heading 
-    [text]="'Welcome to our custom heading'" 
     [tag]="'h1'" 
     [alignment]="'center'" 
     [color]="'blue'" 
-    [fontWeight]="'bold'">
+    [fontWeight]="'bold'"
+    [innerHTML]="'Welcome to our 素晴らしい (wonderful) custom heading'">
 </app-heading>
 
 <app-heading 
-    [text]="'This is an H2 heading'" 
     [tag]="'h2'" 
     [alignment]="'left'" 
     [color]="'green'" 
-    [fontWeight]="'normal'">
-</app-heading>
-
-<app-heading 
-    [text]="'This is an H3 heading'" 
-    [tag]="'h3'" 
-    [alignment]="'right'" 
-    [color]="'purple'" 
-    [fontWeight]="'lighter'">
+    [fontWeight]="'normal'"
+    [innerHTML]="'This is an H2 heading with some <strong>bold</strong> text.'">
 </app-heading>
 
 <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 1rem;">
